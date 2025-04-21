@@ -1,0 +1,45 @@
+docker run rdis - deploy a redis container (default tag: latest)
+
+docker run redis:4.0 - specified version
+
+docker run -p 80:5000 kodekloud/webap -- port mapping
+
+docker run -it kodekloud/webapp -- interacts with host terminal and takes input
+
+docker run -v /home/desktop: /var/lib/mysql my sql -- mapping the storage with host 
+
+docker inspect container_name -- gives allt the details
+
+docker logs container_name/id -- show the logs
+
+docker history container_name -- shows logs of docker 
+
+docker run --links -- links containers
+
+docker -H=remote-docker-engine:2375 -- connects to remote host docker
+
+docker run --cpus=.5 ubuntu -- specify cpu ussage
+docker run --memory=100M ubunty --specify memory ussage
+
+/var/lib/docker -- docker storage
+
+docker run ubuntu --network=none/host -- specify network
+
+docker network create \
+   --driver bridge \
+   --subnet 172.16.0.0/16 \
+   'custom isolated network'
+
+docker network ls -- shows information about docker network
+
+127.0.0.11 -- built-in dns server
+
+docker network inspect 03 --> shows details about network
+
+docker image prune -a -- deletes all unused images
+
+docker service create --replicas=100 nodejs
+
+
+
+

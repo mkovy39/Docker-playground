@@ -64,13 +64,13 @@ docker-compose --version
 
 ## Verification
 
-### 1️⃣ Check Docker Version
+### Check Docker Version
 
 ```bash
 docker --version
 ```
 
-### 2️⃣ Run Docker Test
+### Run Docker Test
 
 ```bash
 sudo docker run hello-world
@@ -82,7 +82,7 @@ Expected Output:
 Hello from Docker! This message shows that your installation appears to be working correctly.
 ```
 
-### 3️⃣ Check Docker Compose Version
+### Check Docker Compose Version
 
 ```bash
 docker-compose --version

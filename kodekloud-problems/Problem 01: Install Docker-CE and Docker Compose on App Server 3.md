@@ -90,8 +90,6 @@ docker-compose --version
 
 ---
 
-✅ Docker-CE and Docker Compose installation on App Server 3 is complete and verified.
+Docker-CE and Docker Compose installation on App Server 3 is complete and verified.
 
 ```
-
----

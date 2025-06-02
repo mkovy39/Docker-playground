@@ -1,11 +1,11 @@
-## 📝 Problem Statement
+## Problem Statement
 
 Delete the Docker container named **kke-container** on **App Server 3** in Stratos DC.  
 This container was created for testing purposes by the Nautilus project developers and is no longer required.
 
 ---
 
-## 🔧 Solution
+## Solution
 
 ### Step 1: List Running Containers
 
@@ -40,7 +40,7 @@ docker rmi <image-name>
 
 ---
 
-## ✅ Verification
+## Verification
 
 Check that the container is deleted and no longer listed:
 
@@ -52,6 +52,5 @@ Expected: **kke-container** should not appear in the output.
 
 ---
 
-✅ **kke-container** has been successfully deleted from **App Server 3**.
+**kke-container** has been successfully deleted from **App Server 3**.
 
-```

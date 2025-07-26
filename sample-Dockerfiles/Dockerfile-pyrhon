@@ -1,0 +1,24 @@
+FROM python:3.11-slim
+
+#Disables .pyc bytecode files and makes Python output appear instantly (important for logs).
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+#Install dpendencies
+RUN apt-get update && apt install -y build-essentials libpq-dev
+
+#sets working directory inside container
+WORKDIR /app
+
+#COPY project dependencies
+COPY requirements.txt .
+
+#Install dependencies
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+#copies the project
+COPY . .
+
+#launches flask app using gunicorn
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000"]
